@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form method="post" action={"%url contact%"}>
+    {%csrf_token%}
+    <input type="text" id_name="name" placeholder="name",required>
+    <br>
+    <input type="email" id_name="email" placeholder="email",required>
+    <br>
+    <input type="message" id_name="message" placeholder="message",required>
+    <br>
+    <input type="subject" id_name="subject" placeholder="subject",required>
+    <br>
+    <button type="submit">submit</button>
+  </form>  
+</body>
+</html>
